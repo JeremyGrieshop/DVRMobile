@@ -1,0 +1,73 @@
+<html>
+  <center><h2>DVRMobile Help</h2></center>
+  <br>
+  <b><u>1. View Description Overview</u></b>
+  <ul>
+    <li><img src="icon.png" width="15" height="15"/><b>Share</b> View allows you to begin sharing your media with your TiVo devices.</li>
+    <li><img src="wifi.png" width="15" height="15"/><b>Devices</b> View allows you scan the local network for available TiVo devices.</li>
+    <li><img src="transfers.png" width="15" height="15"/><b>Transfers</b> View has not been implemented in this release.</li>
+    <li><img src="settings-icon.png" width="15" height="15"/><b>Settings</b> View allows you to configure some DVRMobile settings.</li>
+  </ul>
+  <br>
+  <b><u>2. Viewing media on your TiVo</u></b>
+  <ol>
+    <li>Select the <b>Share</b> <img src="icon.png" width="15" height="15"/> tab Menu at the bottom of this screen.</li>
+    <li>Select the <font color="green"><b>Start Service</b></font> button.</i>
+    <li>Once the service has successfully started, launch your TiVo's TiVo Central menu.</i>
+    <li>Select the menu item labelled <b>Music, Photos, & Showcases</b></i>
+    <li>Select the <b>&lt;Container Path&gt;</b> item, and you will be presented with several albums to view from your iPhone.</li>
+  </ol>
+  <br>
+  <b><u>3. Settings</u></b>
+  <ul>
+    <li><b>GUID</b> This an identifier, unique to each iPhone device, used to identify a known TiVo device, even if the name or IP address has changed.  This setting is read-only.</li>
+    <li><b>Name</b> This a human-readable identifier, also broadcast to TiVo devices.  This setting can be modified.</li>
+    <li><b>Network Broadcast</b>When transmitting TiVo Connect Discovery (TCD) beacons, a UDP packet is broadcast to the local network.  Some routers permit the 255.255.255.255 address for broadcasting, others do not.  For example, if you're on a 192.168.1.x subnet, you may choose to use 192.168.1.255 as the broadcast address.  This setting can be modified.</li>
+    <li><b>Network Port</b> This is the TCP port that is opened on your iPhone device to allow TiVo devices to fetch media from your iPhone.  This setting can be modified.</li>
+    <li><b>Photos Container</b> The name of the Photos "root" container that is displayed by your TiVo device.
+    <li><b>Photos JPEG Quality</b> This is a value between 0.0 and 1.0, describing the quality of the JPEG image to send to your TiVo device during requests.  The higher the value, the less compression and better quality; however, the file size will increase as well which can lead to more network traffic and some TiVo's will discontinue the request if the file size is too large.  I recommend 0.5.  This setting can be modified.</li>
+    <li><b>MAK (Media Access Key)</b> This TiVo property is unique to each TiVo and is used to access content from your TiVo device.  In the current release, this setting does not do anything functional.</li>
+  </ul>
+  <br>
+  <b><u>4. Known Limitations</u></b>
+  <ul>
+    <li>When scrolling through photos too quickly, the DVRMobile app may not be able to keep up.  Often broken images are displayed as a result.  Future versions will attempt to prioritize requests and drop connections that are no longer valid.</li>
+    <li>Photos from the <i>Camera Roll</i> tend to load much more slowly than those from the Photo Library.  This is because the PhotoLibrary has thumbnails already generated and cached.  Future versions of DVRMobile will try to cache thumbnails or allow for a pre-built cache.</li>
+    <li>If your iPhone name, container name, or images contain non-ASCII characters, you may see '?' characters displayed in their place.  Future versions of DVRMobile will attempt to encode unicode characters in a way that is compatible with the TiVo.</li>
+    <li>Some wireless routers will not allow network broadcast packets with 255.255.255.255 as the Network broadcast address.  Therefore, you may need to change your Network Broadcast address to something suitable.  For example, if you are configured for a 192.168.1.x subnet, try 192.168.1.255 as your Broadcast address.</li>
+    <li>Only .mp3 and .m4u files are supported audio types.</li>
+  </ul>
+  <br>
+  <b><u>5. Reporting Problems</u></b>
+  <br><br>
+  I've personally developed and tested this app with two TiVo devices: a Series2 and a Series3 HD.  It would be presumptious on my part to assume there will not be incompatibilites with other devices.  If you have any issues, send me an email:  <a href="mailto:jeremygrieshop+tivoconnect@gmail.com">jeremygrieshop+tivoconnect@gmail.com</a> and provide me with as much detail as possible in order to reproduce the problem.  Also, this application heavily uses syslog for informative and debugging purposes.  If you have syslog installed through Cydia, it would be helpful to include a copy of your <i>/var/log/syslog</i> file.  Finally, if you have a crash to report, send me any crash report files from <i>/var/mobile/Library/Logs/CrashReporter/</i>
+  <br><br>
+  <b><u>6. Change Log</u></b>
+  <br><br>
+  <b>Version 1.2.1</b>
+  <ul>
+    <li>Added PwnPlayer playlists</li>
+    <li>Enabled Random (Shuffle)</li>
+    <li>Fixed some slideshow and continuous play problems</li>
+    <li>Some .mp3 tags (ID3v2) are read to display artist, album, title, year</li>
+    <li>Numerous bug fixes</li>
+  </ul>
+  <br><br>
+  <b>Version 1.2</b>
+  <ul>
+    <li>Changed the App name from TiVoConnect to DVRMobile and many of its associated images, to avoid potential copyright disputes.</li>
+    <li>Added support for streaming mpeg Audio, through iTunes library and Downloads (dTunes, for example)</li>
+    <li>Pre-cached images names load the Photo lists quicker</li>
+    <li>Added "Disable dim" button to disable the dimming auto-lock feature while streaming media</li>
+  </ul>
+  <br><br>
+  <b>Version 1.1</b>
+  <ul>
+    <li>Removed check for WiFi enabled.  In the 2.2.1 firmware, this no longer works properly.</li>
+  </ul>
+  <br><br><br><br>
+  <br><br><br><br>
+  <br><br><br><br>
+  <br><br><br><br>
+  <br><br><br><br>
+</html>

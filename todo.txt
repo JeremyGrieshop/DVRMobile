@@ -1,0 +1,45 @@
+To do (for 1.2.2)
+
+- Test for memory leaks (test more..)
+
+
+Pro Version (for 2.0)
+
+- Enhance photo viewer
+  - asynchronous display (fix first few cells not showing up)
+  - subclass UITableViewCell to find which image was touched
+  - download to camera roll (full res)
+  - display spinning gear when loading image
+  - implement swipe
+  - memory leaks
+- Enhance audio/video details
+- new icon, new splashscreen
+
+- fix lines in spinning gear
+- update IP addresses better
+- timeout on connects to bogus IP's
+- very crashy!!
+- make alphabet index on view
+- Support for AAC audio files
+- Add TiVo remote control
+- TivoToGo Protocol (get stuff off tivo) - requires Tivo Decoder?
+- Figure out "Transfers".
+- Option to sublist songs by alphabet containers?
+- add tivos manually
+- LRU cache?
+- Thread priorities?  (Last thread is first?)
+  - Look into NSOperations and NSOperationQueues
+- Detect WiFi local ip (system call to ifconfig?)
+- Faster scale/rotate routine (thread-safe, too)?
+- Make activity indicators with cancel buttons
+- Setup permissions on which tivo device can access your media
+    - Prompt "allow" dialog for permission?
+- Beacon.listen?  Do we need this for discovery (scan) view?  Lock to be threadsafe?
+- Add video, audio options
+- Add support for video
+  - Podcasts (??) /var/mobile/Media/Podcasts/
+  - MxTube (.mp4) /var/mobile/Media/MxTube/
+  - Cycorder (.mov) /var/mobile/Media/Videos/
+- Create custom playlists and slideshows
+- QueryItem
+- FlushServer/ResetServer?

@@ -1,0 +1,11 @@
+Package: com.mobilemixture.dvrmobilepro
+Name: DVRMobilePro
+Version: 1.0.0-1
+Architecture: iphoneos-arm 
+Description: Stream multimedia to your TiVo DVR wirelessly. 
+Homepage: 
+Depiction: 
+Maintainer: Jeremy Grieshop <jeremygrieshop+dvrmobile@gmail.com> 
+Author: Jeremy Grieshop <jeremygrieshop+dvrmobile@gmail.com> 
+Sponsor:
+Section: Multimedia
